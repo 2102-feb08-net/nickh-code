@@ -108,11 +108,13 @@ namespace Examples
             if (input.Equals(cpuInput))
             {
                 Console.WriteLine("You tied, try again!");
+                    Console.ReadLine();
                     repeat = true;
             }
              else if (!objs.ContainsKey(input))
                 {
                     Console.WriteLine("Invalid Input, try again!");
+                    Console.ReadLine();
                     repeat = true;
                 }
             } while (repeat);
